@@ -55,6 +55,7 @@ print(ts_date)
 import datetime
 
 today = datetime.datetime.today()
+
 today_str = today.strftime('%A, %d. %B %Y')
 print(today_str)
 
