@@ -6,7 +6,7 @@ while True:
     print("\nВыберите опцию:")
     print("1. Количество программистов по статусу хобби/профессионал")
     print("2. Статистика возраста программистов")
-    print("3. Количество программистов по странам")
+    print("3. Количество программистов по странам (в порядке убывания)")
     print("4. Таблица с валютами (в порядке возрастания)")
     print("0. Выйти")
 
@@ -25,7 +25,7 @@ while True:
         print(age_stats)
     elif choice == '3':
         country_counts = df['Country'].value_counts().sort_values(ascending=False)
-        print("\nКоличество программистов по странам:")
+        print("\nКоличество программистов по странам (в порядке убывания):")
         print(country_counts)
     elif choice == '4':
         unique_currencies = df['CurrencyDesc'].value_counts(ascending=True)
