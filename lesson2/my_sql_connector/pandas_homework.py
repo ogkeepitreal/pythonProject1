@@ -7,7 +7,7 @@ while True:
     print("1. Количество программистов по статусу хобби/профессионал")
     print("2. Статистика возраста программистов")
     print("3. Количество программистов по странам")
-    print("4. Значения 'CurrencyDesc'")
+    print("4. Таблица с валютами (в порядке возрастания)")
     print("0. Выйти")
 
     choice = input("Введите номер опции (0-4): ")
@@ -29,7 +29,7 @@ while True:
         print(country_counts)
     elif choice == '4':
         unique_currencies = df['CurrencyDesc'].value_counts(ascending=True)
-        print("\nЗначения 'CurrencyDesc':")
+        print("\nТаблица с валютами (в порядке возрастания):")
         print(unique_currencies)
     else:
         print("Некорректный ввод. Пожалуйста, введите число от 0 до 4.")
